@@ -1,0 +1,24 @@
+POST http://localhost:8000/api/perso HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "arthur",
+    "weapon": "sword"
+}
+
+###
+GET http://localhost:8000/api/perso
+
+###
+GET http://localhost:8000/api/perso/k7EqtnRzvcE3Tprg
+
+###
+PATCH http://localhost:8000/api/perso/NDmtY8pZwwumxgwz HTTP/1.1
+Content-Type: application/json
+
+{
+    "weapon": "excalibur"
+}
+
+###
+DELETE http://localhost:8000/api/perso/uaDrueUlbT0dm36G
